@@ -1,0 +1,158 @@
+.section {
+  padding: 6rem 1.5rem;
+}
+
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+/* left */
+.infoTitle {
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-weight: 800;
+  background: linear-gradient(
+    135deg,
+    var(--text-primary),
+    var(--maroon-strong)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.infoDesc {
+  margin-top: 1rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  max-width: 420px;
+}
+
+.infoList {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.infoItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+.value {
+  font-size: 0.95rem;
+  color: var(--text-primary);
+}
+
+/* card */
+.cardContainer {
+  padding: 0;
+}
+
+.card {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 22px;
+  padding: 2rem;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+  width: 100%;
+  max-width: 960px;
+}
+
+.cardTitle {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1.75rem;
+  color: var(--text-primary);
+}
+
+.full {
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.input,
+.textarea {
+  background: transparent;
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  padding: 0.75rem 0.9rem;
+  color: var(--text-primary);
+  font-size: 0.9rem;
+}
+
+.textarea {
+  min-height: 110px;
+  resize: none;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  color: var(--text-muted);
+}
+
+.button {
+  margin-top: 0.75rem;
+  padding: 0.9rem 1.8rem;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  background: linear-gradient(
+    135deg,
+    var(--maroon),
+    var(--maroon-strong)
+  );
+  color: var(--text-primary);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px var(--maroon-glow);
+}
+
+.hint {
+  margin-top: 1.2rem;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+
+/* responsive */
+@media (max-width: 900px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 2.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 1.8rem;
+  }
+
+  .button {
+    width: 100%;
+  }
+}

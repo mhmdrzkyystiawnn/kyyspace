@@ -1,4 +1,4 @@
-// src/app/layout.js
+import type { ReactNode } from 'react'
 import { Inter } from 'next/font/google';
 import './globals.css';
 import { SITE_CONFIG, META_TAGS } from '@/lib/constants';

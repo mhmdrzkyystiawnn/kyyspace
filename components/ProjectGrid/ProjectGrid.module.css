@@ -135,7 +135,9 @@
   .section {
     padding: 3rem 1rem;
   }
-
+  .view-toggle {
+    display: none;
+  }
   .header {
     flex-direction: column;
     align-items: flex-start;

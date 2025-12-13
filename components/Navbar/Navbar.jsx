@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import styles from './Navbar.module.css';
-import SOCIAL_LINKS from '@/lib/constants'
+import { SOCIAL_LINKS } from '@/lib/constants';
 
 // Floating Dock Mobile Component
 const FloatingDockMobile = ({ items }) => {
@@ -314,7 +314,7 @@ export default function Navbar() {
           {/* Social Icons */}
           <div className={styles.socialGroup}>
             <a
-              href="https://github.com/mhmdrzkyystiawnn"
+              href={SOCIAL_LINKS.github}
               target="_blank"
               rel="noopener noreferrer"
               className={styles.socialBtn}
@@ -325,7 +325,7 @@ export default function Navbar() {
               </svg>
             </a>
             <a
-              href="https://instagram.com/rizkyystiawann"
+              href={SOCIAL_LINKS.instagram}
               target="_blank"
               rel="noopener noreferrer"
               className={styles.socialBtn}

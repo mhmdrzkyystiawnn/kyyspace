@@ -43,7 +43,7 @@ export default function ProjectGrid({ projects }) {
             </p>
           </div>
 
-          <ViewToggle viewMode={viewMode} setViewMode={setViewMode} />
+          <ViewToggle viewMode={viewMode} setViewMode={setViewMode} className="view-toggle" />
         </div>
 
         {/* Search & Filter */}

@@ -1,3 +1,25 @@
+/* Comet Card Wrapper */
+.cometWrapper {
+  position: relative;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.01) 0px 520px 146px 0px, 
+              rgba(0, 0, 0, 0.04) 0px 333px 133px 0px, 
+              rgba(0, 0, 0, 0.26) 0px 83px 83px 0px, 
+              rgba(0, 0, 0, 0.29) 0px 21px 46px 0px;
+}
+
+.glareEffect {
+  position: absolute;
+  inset: 0;
+  z-index: 50;
+  height: 100%;
+  width: 100%;
+  border-radius: 16px;
+  mix-blend-mode: overlay;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
 .card {
   position: relative;
   background: var(--glass-bg);
@@ -27,7 +49,7 @@
   filter: blur(20px);
 }
 
-.glowActive {
+.card:hover .glow {
   opacity: 0.6;
 }
 
